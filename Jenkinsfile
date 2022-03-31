@@ -10,11 +10,11 @@ pipeline {
     stages {
         
         
-         stage ('checkout') {
-            steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Pranali14932/hello-world']]])
-            }
-        }
+//          stage ('checkout') {
+//             steps {
+//             checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Pranali14932/hello-world']]])
+//             }
+//         }
         
         stage ('Build') {
             steps {
